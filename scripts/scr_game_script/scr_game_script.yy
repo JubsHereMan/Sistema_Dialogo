@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_game_script",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_game_script",
+  "parent":{
+    "name":"SistemaDialogo",
+    "path":"folders/SistemaDialogo.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

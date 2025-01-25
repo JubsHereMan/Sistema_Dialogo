@@ -40,6 +40,7 @@
     {"id":{"name":"obj_text_box","path":"objects/obj_text_box/obj_text_box.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_functions","path":"scripts/scr_functions/scr_functions.yy",},},
+    {"id":{"name":"scr_game_script","path":"scripts/scr_game_script/scr_game_script.yy",},},
     {"id":{"name":"Spr_speakblock","path":"sprites/Spr_speakblock/Spr_speakblock.yy",},},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},},
   ],
