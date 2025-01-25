@@ -20,9 +20,7 @@ txtb_img_spd=6/60;
 
 page=0;
 page_number=0
-text[0]="Oi Jubs";
-text[1]="tudo bem?";
-text[2]="QUE BOOOOOOOOOOOOOOOOOOOOOOOO BOOOOOOOOOOOOOOOOOOOOOOOO, BOOOOOOOOOOOOOOOOOOOOOOOO, BOOOOOOOOOOOOOOOOOOOOOOOO,BOOOOOOOOOOOOOOOOOOOOOOOO,BOOOOOOOOOOOOOOOOOOOOOOOO,,";
+text[0]="";
 text_lenght[0]= string_length(text[0]);
 draw_char=0;
 text_spd=1;
