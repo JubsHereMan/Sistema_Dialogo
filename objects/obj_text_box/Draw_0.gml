@@ -17,7 +17,6 @@ if setup == false{
 	
 	
 //-----------loop atraves das paginas-------------// 
-	page_number= array_length(text);
 	for(var p=0; p < page_number; p++){
 	
 		
