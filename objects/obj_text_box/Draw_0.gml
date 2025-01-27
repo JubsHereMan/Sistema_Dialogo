@@ -57,6 +57,11 @@ if accept_key
 				draw_char=0;
 			}else
 			{
+				//linkar os textos para as opções
+					if option_number > 0{
+						create_textbox(option_link_id[option_pos])
+						
+					}
 				instance_destroy()
 			}
 		//não terminou de escrever
@@ -90,14 +95,31 @@ draw_sprite_ext(txtb_spr,txtb_img, _txtb_x,_txtb_y,textbox_width/txtb_spr_w,text
 if(draw_char == text_lenght[page] && page == page_number-1 )
 {
 
-	var _op_space = 20;
-	var _op_bord = 8;
+//desenho de escolha
+	option_pos += keyboard_check_pressed(vk_down)- keyboard_check_pressed(vk_up);
+	option_pos = clamp(option_pos,0,option_number -1)
+	
+
+
+
+//desenhar as opções
+	var _op_space = 40;
+	var _op_bord =4;
 	for (var op=0;op<option_number;op++)
 	{
 	
 		//caixa de opção
 		var _o_w= string_width(option[op]) + _op_bord *2;
-		draw_sprite_ext(txtb_spr,txtb_img,_txtb_x + 16, _txtb_y - _op_space *option_number +  _op_space*op,_o_w/txtb_spr_w,(_op_space -1)/txtb_spr_h,0,c_white,1);
+		draw_sprite_ext(txtb_spr,txtb_img,_txtb_x + 16, _txtb_y - _op_space *option_number +  _op_space*op,_o_w/txtb_spr_w,(_op_space -3)/txtb_spr_h,0,c_white,1);
+		
+		
+		
+		//seletor de opção
+		
+		if option_pos == op{
+			draw_sprite(Spr_selector,0,_txtb_x,  _txtb_y - _op_space *option_number +  _op_space*op )	;
+		}
+		
 		
 		//o texto de opção
 		
