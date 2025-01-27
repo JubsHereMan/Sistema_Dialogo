@@ -26,4 +26,12 @@ draw_char=0;
 text_spd=1;
 
 
+
+//--------------opções-------------------------//
+option[0]="";
+option_link_id[0] =-1;
+option_pos=0;
+option_number=0;
+
+
 setup= false;

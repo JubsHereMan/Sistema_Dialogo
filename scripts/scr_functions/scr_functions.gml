@@ -9,6 +9,18 @@ function scr_text(_text){
 
 }
 
+///	@param option
+/// @param link_id
+function scr_option(_option,_link_id){
+
+	option[option_number] = _option;
+	option_link_id[option_number]= _link_id
+	 
+	option_number++; 
+
+
+}
+
 /// @param text_id
 function create_textbox(_text_id){
 		with(instance_create_depth(0,0,-9999,obj_text_box))
@@ -16,3 +28,5 @@ function create_textbox(_text_id){
 				scr_game_script(_text_id)
 			}
 }
+
+
